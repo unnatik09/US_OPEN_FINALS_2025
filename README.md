@@ -40,4 +40,8 @@ The final model uses the following features:
 - `Surface_ELO_1`, `Surface_ELO_2`, `Surface_ELO_diff`
 
 ---
+### Model Evaluation Insight
 
+While the model achieves an accuracy of **68.5%**, the **ROC AUC score of 0.7585** provides a more meaningful measure of its predictive power. AUC evaluates the model’s ability to correctly rank winners versus losers across all matches, rather than simply counting exact predictions.  
+
+In tennis, many matches between top players are highly competitive, often with probabilities close to 50–50. In such cases, accuracy alone may underestimate the model’s effectiveness. The AUC indicates that in approximately **76% of all winner-loser matchups**, the model correctly assigns a higher probability to the actual winner. This demonstrates that the model reliably captures relative player strengths, making it a valuable tool for probabilistic match predictions even when outcomes are closely contested.
