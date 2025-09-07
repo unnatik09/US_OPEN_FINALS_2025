@@ -45,3 +45,8 @@ The final model uses the following features:
 While the model achieves an accuracy of **68.5%**, the **ROC AUC score of 0.7585** provides a more meaningful measure of its predictive power. AUC evaluates the model’s ability to correctly rank winners versus losers across all matches, rather than simply counting exact predictions.  
 
 In tennis, many matches between top players are highly competitive, often with probabilities close to 50–50. In such cases, accuracy alone may underestimate the model’s effectiveness. The AUC indicates that in approximately **76% of all winner-loser matchups**, the model correctly assigns a higher probability to the actual winner. This demonstrates that the model reliably captures relative player strengths, making it a valuable tool for probabilistic match predictions even when outcomes are closely contested.
+
+---
+### Real-World Predictions
+
+To test the model’s practical usefulness, we applied it to predict outcomes of recent high-profile matches, including **men’s and women’s semifinals and finals**. The model successfully predicted the winners in these matches, demonstrating its ability to capture player form and relative strengths, even in competitive, closely contested games. This provides additional confidence in the model’s applicability beyond the training dataset.
